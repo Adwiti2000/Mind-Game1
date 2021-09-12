@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner Game</title>
+    <link rel="stylesheet" href="beginner.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+</head>
+<body>
+    <div id="table1">
+        <table class="center">
+            <tr>
+                <th><div class="box" id="box1" onclick="get_random_box_id(this.id)"></div></th>
+                <th><div class="box" id="box2" onclick="get_random_box_id(this.id)"></div></th>
+                <th><div class="box" id="box3" onclick="get_random_box_id(this.id)"></div></th>
+            </tr>
+            <tr>
+                <td><div class="box" id="box4" onclick="get_random_box_id(this.id)"></div></td>
+                <td><div class="box" id="box5" onclick="get_random_box_id(this.id)"></div></td>
+                <td><div class="box" id="box6" onclick="get_random_box_id(this.id)"> </div></td>
+            </tr>
+            </table>
+            <button id="start_button">PLAY</button>
+    </div>
+    
+    <script src="beginner.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+   
+}
+body{
+    background-color: black;
+    background-image: linear-gradient(red ,black  );
+
+}
+
+
+@keyframes swing_border {
+    0% {transform: rotate(15deg);}
+    10% {transform: rotate(-15deg);}
+    20% {transform: rotate(13deg);}
+    30% {transform: rotate(-13deg);}
+    40% {transform: rotate(11deg);}
+    50% {transform: rotate(-11deg);}
+    60% {transform: rotate(9deg);}
+    70% {transform: rotate(-9deg);}
+    80% {transform: rotate(7deg);}
+    90% {transform: rotate(-7deg);}
+    100% {transform: rotate(0deg);}
+}
+#board{
+    width: 700px;
+    height: 700px;
+  margin-left: 450px;
+  margin-top: 50px;
+  
+ 
+}
+.base{
+    animation-name: swing_border;
+    animation-duration: 7s;
+   
+}
+#hinge{
+    margin-left: 75px;
+    
+    ;
+}
+
+#start{
+    margin-top: 150px;
+    width: 150px;
+    height: 50px;
+    margin-left: 150px;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-style: italic;
+    cursor: pointer;
+    
+}
+.circles{
+    height: 30px;
+    width: 30px;
+    border: solid black;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+#circle1{
+position: absolute;
+margin-top: 50px;
+margin-left: 120px;
+
+}
+#circle2{
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 50px;
+    
+}
+#circle3{
+    position: absolute;
+    margin-left: 290px;
+    margin-top: 50px;;
+}
+#select_level{
+    
+    visibility: hidden;
+}
+.level_name{
+    position: absolute;
+    margin-top: 140px;
+    font-size: 3em;
+    margin-left: 100px;
+    color: rgb(25, 25, 112);
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#beginner{
+      visibility: hidden;
+      animation-name: blinking_text;
+      animation-duration: 2.5s;
+      animation-iteration-count: infinite;
+}
+#medium{
+    visibility: hidden;
+    animation-name: blinking_text;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+#advance{
+    visibility: hidden;
+    animation-name: blinking_text;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes blinking_text{
+    0% {opacity: 0;}
+    25% {opacity: 0.3;}
+    50% {opacity: 0.5;}
+    70% {opacity: 0.7;}
+    100% {opacity: 0.9;}
+
+}
